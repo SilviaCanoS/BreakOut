@@ -16,10 +16,10 @@ public class Bloque : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (resistencia <= 1) Destroy(this.gameObject);
+        if (resistencia <= 0) Destroy(this.gameObject);
     }
 
-    public virtual void RebotarPelota() //virtual: las clases hiko pueden hacer una sobrecarga al metodo de la clase padre
+    public virtual void RebotarPelota() //virtual: las clases hijo pueden hacer una sobrecarga al metodo de la clase padre
     {
         
     }

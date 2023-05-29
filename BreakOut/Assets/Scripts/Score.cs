@@ -51,8 +51,8 @@ public class Score : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        soVarScore.score += 50;
-    }
+    //private void FixedUpdate()
+    //{
+    //    soVarScore.score += 50;
+    //}
 }

@@ -22,8 +22,8 @@ public class BloqueGato : Bloque //divide la pelota cuando se destruye
     //    }
     //}
 
-    public override void RebotarPelota()
+    public override void RebotarPelota(Collision collision)
     {
-        base.RebotarPelota();
+        base.RebotarPelota(collision);
     }
 }

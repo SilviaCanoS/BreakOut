@@ -10,8 +10,8 @@ public class BloquePiedra : Bloque
         resistencia = 5;
     }
 
-    public override void RebotarPelota() //herencia
+    public override void RebotarPelota(Collision collision) //herencia
     {
-        base.RebotarPelota();
+        base.RebotarPelota(collision);
     }
 }

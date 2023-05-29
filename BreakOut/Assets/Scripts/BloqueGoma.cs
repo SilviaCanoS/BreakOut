@@ -10,8 +10,8 @@ public class BloqueGoma : Bloque //alarga el jugador
         resistencia = 4; 
     }
 
-    public override void RebotarPelota()
+    public override void RebotarPelota(Collision collision)
     {
-        base.RebotarPelota();
+        base.RebotarPelota(collision);
     }
 }

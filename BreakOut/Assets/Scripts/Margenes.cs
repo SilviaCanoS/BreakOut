@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BloqueMadera : Bloque
+public class Margenes : Bloque
 {
-    // Start is called before the first frame update
     void Start()
     {
-        resistencia = 3; 
+        resistencia = 99999;
     }
 
     public override void RebotarPelota(Collision collision)

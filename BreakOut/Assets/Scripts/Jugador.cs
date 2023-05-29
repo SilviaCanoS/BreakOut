@@ -44,4 +44,16 @@ public class Jugador : MonoBehaviour
 
         transform.position = pos;
     }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Pelota")
+        {
+            //saca el vector (de la colision en el bloque al centro):
+            Vector3 direccion = collision.contacts[0].point - transform.position;
+            direccion = direccion.normalized; //normaliza el vector
+            //velocidad de la pelota:
+            collision.rigidbody.velocity = collision.gameObject.GetComponent<Pelota>().velocidadPelota * direccion;
+        }
+    }
 }

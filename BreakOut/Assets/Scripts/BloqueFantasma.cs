@@ -25,8 +25,8 @@ public class BloqueFantasma : Bloque //a veces se vuelve invisible y no se resta
     //    }
     //}
 
-    public override void RebotarPelota()
+    public override void RebotarPelota(Collision collision)
     {
-        base.RebotarPelota();
+        base.RebotarPelota(collision);
     }
 }

@@ -127,5 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421530af29d1ae742b2760ccc7797824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloque: {fileID: 0}
+  bloque: {fileID: 5174808131123120711}
   resistencia: 1
+  aumentarPuntaje:
+    m_PersistentCalls:
+      m_Calls: []

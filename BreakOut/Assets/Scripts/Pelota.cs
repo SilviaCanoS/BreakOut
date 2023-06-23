@@ -7,12 +7,13 @@ public class Pelota : MonoBehaviour
 {
     public bool isGameStarted = false;
     [SerializeField] public float velocidadPelota = 25;
-    
+
     Vector3 ultimaPosiciom = Vector3.zero;
     Vector3 direccion = Vector3.zero;
     new Rigidbody rigidbody;
     private LimitesPantalla control;
     public UnityEvent pelotaDestruida;
+    public Opciones opciones;
 
     private void Awake()
     {
@@ -33,10 +34,12 @@ public class Pelota : MonoBehaviour
     //input manager
     void Update()
     {
+        velocidadPelota = opciones.velocidadPelota;
+
         //en caso de que la pelota se salga por el borde inferior
         if (control.salioAbajo)
         {
-            Debug.Log("La pelota toco el borde inferior");
+            //Debug.Log("La pelota toco el borde inferior");
             pelotaDestruida.Invoke();
             Destroy(this.gameObject);
         }
@@ -45,44 +48,44 @@ public class Pelota : MonoBehaviour
         if (control.salioArriba)
         {
             direccion = transform.position - ultimaPosiciom;
-            Debug.Log("La pelota toco el borde superior");
+            //Debug.Log("La pelota toco el borde superior");
             direccion.y *= -1;
             direccion = direccion.normalized;
             rigidbody.velocity = velocidadPelota * direccion;
             control.salioArriba = false;
             control.enabled = false;
-            Invoke("HabilitarControl", .5f);
+            Invoke("HabilitarControl", .1f);
         }
 
         //en caso de que la pelota se salga por el borde derecho
         if (control.salioDerecha)
         {
             direccion = transform.position - ultimaPosiciom;
-            Debug.Log("La pelota toco el borde derecho");
+            //Debug.Log("La pelota toco el borde derecho");
             direccion.x *= -1;
             direccion = direccion.normalized;
             rigidbody.velocity = velocidadPelota * direccion;
             control.salioDerecha = false;
             control.enabled = false;
-            Invoke("HabilitarControl", .5f);
+            Invoke("HabilitarControl", .1f);
         }
 
         //en caso de que la pelota se salga por el borde izquierdo
         if (control.salioIzquierda)
         {
             direccion = transform.position - ultimaPosiciom;
-            Debug.Log("La pelota toco el borde izquierdo");
+            //Debug.Log("La pelota toco el borde izquierdo");
             direccion.x *= -1;
             direccion = direccion.normalized;
             rigidbody.velocity = velocidadPelota * direccion;
             control.salioIzquierda = false;
             control.enabled = false;
-            Invoke("HabilitarControl", .5f);
+            Invoke("HabilitarControl", .1f);
         }
 
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetButton("Submit")) //cuando se use la tecla espacio
         {
-            if(!isGameStarted)
+            if (!isGameStarted)
             {
                 isGameStarted = true; //el juego empezo
                 this.transform.SetParent(null); //quita al jugador como padre de la pelota
@@ -106,5 +109,10 @@ public class Pelota : MonoBehaviour
     private void LateUpdate()
     {
         if (direccion != Vector3.zero) direccion = Vector3.zero;
+    }
+
+    public void Destruir ()
+    {
+        Destroy(this.gameObject);
     }
 }

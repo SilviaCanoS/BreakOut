@@ -1,13 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Bloque : MonoBehaviour
 {
+    public Transform transformResistencia;
+    public TMP_Text textoResistencia;
+    public Opciones opciones;
     public GameObject bloque;
     public int resistencia = 1; //resistencia = 1: se destruye al primer contacto
     public UnityEvent aumentarPuntaje;
+
+    private void Start()
+    {
+        if (opciones.nivelDificultad == Opciones.Dificultad.dificil) resistencia = 2;
+        transformResistencia = GameObject.Find("Resistencia").transform;
+        textoResistencia = transformResistencia.GetComponent<TMP_Text>();
+        textoResistencia.text = resistencia.ToString();
+    }
 
     //se disparara cada que un objeto choque con el collider del gameObject
     public void OnCollisionEnter(Collision collision)
@@ -15,15 +27,10 @@ public class Bloque : MonoBehaviour
         if (collision.gameObject.tag == "Pelota") RebotarPelota(collision);
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+        textoResistencia.text = resistencia.ToString();
         if (resistencia <= 0)
         {
             aumentarPuntaje.Invoke();

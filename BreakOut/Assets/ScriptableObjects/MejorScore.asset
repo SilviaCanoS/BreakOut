@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: MejorScore
   m_EditorClassIdentifier: 
   score: 0
-  mejorScore: 202000
+  mejorScore: 0

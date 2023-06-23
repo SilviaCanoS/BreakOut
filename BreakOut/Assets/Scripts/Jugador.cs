@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Jugador : MonoBehaviour
 {
+    public float timer = 0, timerEfecto = 10;
     Vector3 mousePos2D, mousePos3D; //nos da la posicion del mouse en 2D
     [SerializeField] public int limiteX = 24; //SerializeField hace que aparezca en el editor de unity
     [SerializeField] public float velocidadJugador = 30;
@@ -43,6 +44,18 @@ public class Jugador : MonoBehaviour
         else if(pos.x > limiteX) pos.x = limiteX;
 
         transform.position = pos;
+
+        if(transform.localScale.y == 8)
+        {
+            timer += Time.deltaTime;
+            if (timer >= timerEfecto)
+            {
+                timer = 0;
+                this.GetComponent<Transform>().localScale = new Vector3(1, 4, 2);
+                limiteX = 24;
+                this.GetComponent<MeshRenderer>().material.color = Color.white;
+            }
+        }
     }
 
     public void OnCollisionEnter(Collision collision)

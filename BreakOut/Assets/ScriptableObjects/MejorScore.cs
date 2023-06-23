@@ -8,6 +8,6 @@ using UnityEngine;
 //tiene acceso a las funciones onEnable, onDisable, ...
 public class MejorScore : ScorePersistente
 {
-    public int score = 0;
     public int mejorScore = 0;
+    public int score = 0;
 }

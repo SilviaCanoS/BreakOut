@@ -14,14 +14,10 @@ public class BloqueGato : Bloque //divide la pelota cuando se destruye
         resistencia = 2;
         if (opciones.nivelDificultad == Opciones.Dificultad.facil) resistencia = 1;
         else if (opciones.nivelDificultad == Opciones.Dificultad.dificil) resistencia = 4;
-        transformResistencia = GameObject.Find("ResistenciaGato").transform;
-        textoResistencia = transformResistencia.GetComponent<TMP_Text>();
-        textoResistencia.text = resistencia.ToString();
     }
 
     private void Update()
     {
-        textoResistencia.text = resistencia.ToString();
         if (resistencia <= 0)
         {
             aumentarPuntaje.Invoke();

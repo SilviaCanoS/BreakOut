@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class BloqueGoma : Bloque //alarga el jugador
 {
@@ -15,14 +14,10 @@ public class BloqueGoma : Bloque //alarga el jugador
         resistencia = 4;
         if (opciones.nivelDificultad == Opciones.Dificultad.facil) resistencia = 1;
         else if (opciones.nivelDificultad == Opciones.Dificultad.dificil) resistencia = 8;
-        transformResistencia = GameObject.Find("ResistenciaGoma").transform;
-        textoResistencia = transformResistencia.GetComponent<TMP_Text>();
-        textoResistencia.text = resistencia.ToString();
     }
 
     private void Update()
     {
-        textoResistencia.text = resistencia.ToString();
         if (resistencia <= 0)
         {
             aumentarPuntaje.Invoke();

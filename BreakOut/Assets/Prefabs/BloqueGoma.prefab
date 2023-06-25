@@ -128,8 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43feade1057a619429d9b929c19327ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transformResistencia: {fileID: 0}
-  textoResistencia: {fileID: 0}
   opciones: {fileID: 11400000, guid: 57bb885aa88cdf74f90097dea4080ac5, type: 2}
   bloque: {fileID: 7070572487870475786}
   resistencia: 4
@@ -148,8 +146,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  transformResistenciaGoma: {fileID: 0}
-  textoResistenciaGoma: {fileID: 0}
   jugador: {fileID: 0}
 --- !u!1 &8560674216608654086
 GameObject:
@@ -162,6 +158,7 @@ GameObject:
   - component: {fileID: 370958673597949999}
   - component: {fileID: 2598272537263798607}
   - component: {fileID: 1696419366837223459}
+  - component: {fileID: 503333941071643747}
   m_Layer: 0
   m_Name: ResistenciaGoma
   m_TagString: Untagged
@@ -323,3 +320,16 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2598272537263798607}
   m_maskType: 0
+--- !u!114 &503333941071643747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8560674216608654086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cddd0ac1186344da704c0b0b88ff25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloque: {fileID: -3583532628808084031}

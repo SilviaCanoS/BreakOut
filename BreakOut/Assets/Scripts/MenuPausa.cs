@@ -11,10 +11,7 @@ public class MenuPausa : MonoBehaviour
 
     public void MostrarMenuPausa()
     {
-        menuPausa.SetActive(true);
-        var pelota = Instantiate(pelotaPrefab) as GameObject;
-        pelotaScript = pelota.GetComponent<Pelota>();
-        
+        menuPausa.SetActive(true);   
     }
 
     public void OcultarMenuPausa()

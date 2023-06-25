@@ -9,6 +9,9 @@ public class AdministradorBloques : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.childCount == 0) menuFinNivel.SetActive(true);
+        if (transform.childCount == 0)
+        {
+            menuFinNivel.SetActive(true);
+        }
     }
 }

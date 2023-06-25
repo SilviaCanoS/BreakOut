@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8208174877377867807}
   - component: {fileID: 4078651385276749517}
   - component: {fileID: 9051629092426775383}
+  - component: {fileID: 7826196911749719883}
   m_Layer: 0
   m_Name: ResistenciaPiedra
   m_TagString: Untagged
@@ -172,6 +173,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 4078651385276749517}
   m_maskType: 0
+--- !u!114 &7826196911749719883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2463117705343435244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cddd0ac1186344da704c0b0b88ff25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloque: {fileID: 4018907808379593886}
 --- !u!1 &5174808131123120711
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421530af29d1ae742b2760ccc7797824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transformResistencia: {fileID: 0}
-  textoResistencia: {fileID: 0}
   opciones: {fileID: 11400000, guid: 57bb885aa88cdf74f90097dea4080ac5, type: 2}
   bloque: {fileID: 5174808131123120711}
   resistencia: 5
@@ -320,5 +332,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  transformResistenciaPiedra: {fileID: 0}
-  textoResistenciaPiedra: {fileID: 0}

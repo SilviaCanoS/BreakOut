@@ -11,14 +11,10 @@ public class BloqueMadera : Bloque
         resistencia = 3;
         if (opciones.nivelDificultad == Opciones.Dificultad.facil) resistencia = 1;
         else if (opciones.nivelDificultad == Opciones.Dificultad.dificil) resistencia = 6;
-        transformResistencia = GameObject.Find("ResistenciaMadera").transform;
-        textoResistencia = transformResistencia.GetComponent<TMP_Text>();
-        textoResistencia.text = resistencia.ToString();
     }
 
     private void Update()
     {
-        textoResistencia.text = resistencia.ToString();
         if (resistencia <= 0)
         {
             aumentarPuntaje.Invoke();

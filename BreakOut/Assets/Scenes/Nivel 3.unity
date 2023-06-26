@@ -4417,6 +4417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPausa: {fileID: 10158744}
   pelotaPrefab: {fileID: 9164215006120764912, guid: 0989608047419bc43a8357d206e6a4fb, type: 3}
+  pelota: {fileID: 1865596688}
 --- !u!114 &963194233
 MonoBehaviour:
   m_ObjectHideFlags: 0

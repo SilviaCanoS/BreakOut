@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class MenuPausa : MonoBehaviour
 {
     public GameObject menuPausa, pelotaPrefab;
-    private Pelota pelotaScript;
+    public Pelota pelota;
 
     public void MostrarMenuPausa()
     {
@@ -17,6 +17,7 @@ public class MenuPausa : MonoBehaviour
     public void OcultarMenuPausa()
     {
         menuPausa.SetActive(false);
+        if(!pelota.isGameStarted) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void RegresarPantallaPrincipal()

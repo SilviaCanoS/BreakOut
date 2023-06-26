@@ -33,7 +33,6 @@ public class Bloque : MonoBehaviour
             //aumentarPuntaje.Invoke();
             AumentarScore();
             Destroy(this.gameObject);
-
         }
     }
 

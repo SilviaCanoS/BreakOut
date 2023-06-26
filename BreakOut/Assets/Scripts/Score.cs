@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 //using UnityEditor.Build.Content;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -47,11 +49,6 @@ public class Score : MonoBehaviour
         textoMejorScore.text = $"Mejor Score: {varScore.mejorScore}";
         if (varScore.score > varScore.mejorScore) varScore.mejorScore = varScore.score;
         varScore.Guardar();
-    }
-
-    public void AumentarScore(int puntos)
-    {
-        varScore.score += puntos;
     }
 
     //private void FixedUpdate()

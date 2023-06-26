@@ -515,6 +515,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 807671490}
@@ -522,6 +526,10 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 807671489}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -532,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -599,7 +607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -642,6 +650,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1383943368}
@@ -649,6 +661,14 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 1383943367}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -668,6 +688,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 297110959}
@@ -676,12 +700,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 297110958}
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 180953949}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1307,6 +1335,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1203361586}
@@ -1315,12 +1347,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1203361585}
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 180953949}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1758,6 +1794,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1178228753}
@@ -1765,6 +1805,10 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 1178228752}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2387,7 +2431,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2430,6 +2482,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1390309458}
@@ -2437,6 +2493,14 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 1390309457}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2456,6 +2520,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: -5987300285559674213, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: -5987300285559674213, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1897735806}
@@ -2463,6 +2531,10 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 1897735805}
+    - target: {fileID: -5987300285559674213, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -5987300285559674213, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2473,7 +2545,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3058,6 +3130,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1628015956}
@@ -3066,12 +3142,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1628015955}
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 180953949}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3840,6 +3920,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: -5987300285559674213, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: -5987300285559674213, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5987300285559674213, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 180953949}
@@ -3849,7 +3937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: 1ab8da18912b00f4196f31779a30813c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4052,6 +4140,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1113124316}
@@ -4059,6 +4151,10 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 1113124315}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4069,7 +4165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4409,22 +4505,22 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1588749940}
+  - {fileID: 641035318}
+  - {fileID: 101764805}
+  - {fileID: 1864031740}
+  - {fileID: 1697759896}
   - {fileID: 2140110302}
+  - {fileID: 534193602}
+  - {fileID: 102234512}
+  - {fileID: 323119274}
+  - {fileID: 855235498}
   - {fileID: 2032704744}
+  - {fileID: 1063005945}
+  - {fileID: 72650742}
+  - {fileID: 1589350216}
+  - {fileID: 2000113762}
   - {fileID: 90167878}
   - {fileID: 643035354}
-  - {fileID: 641035318}
-  - {fileID: 534193602}
-  - {fileID: 1063005945}
-  - {fileID: 101764805}
-  - {fileID: 102234512}
-  - {fileID: 72650742}
-  - {fileID: 1864031740}
-  - {fileID: 323119274}
-  - {fileID: 1589350216}
-  - {fileID: 1697759896}
-  - {fileID: 855235498}
-  - {fileID: 2000113762}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5493,6 +5589,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 180953949}
@@ -5511,6 +5619,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1002304239}
@@ -5518,6 +5630,10 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 1002304238}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5606,7 +5722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5649,6 +5765,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 1740477533}
@@ -5656,6 +5776,14 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 1740477532}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -6627,7 +6755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8031318150789862783, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6670,6 +6798,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 432871430}
@@ -6677,6 +6809,14 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 432871429}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8413181852768904726, guid: e308bc86331b56748ad157545998608f, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7100,6 +7240,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: textoResistencia
       value: 
       objectReference: {fileID: 808105348}
@@ -7107,6 +7251,10 @@ PrefabInstance:
       propertyPath: transformResistencia
       value: 
       objectReference: {fileID: 808105347}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -7117,7 +7265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7174,6 +7322,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4018907808379593886, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 180953949}
@@ -7183,7 +7339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8217568364392219498, guid: 3d2d6188756fb7b4fa2d27f24a6f599e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7451,12 +7607,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1346726287}
     m_Modifications:
     - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: varScore
+      value: 
+      objectReference: {fileID: 11400000, guid: c2628ae00a8bbb64ea760f0795190d91, type: 2}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
+      propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1295734968913747487, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: aumentarPuntaje.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 180953949}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6324617687898580775, guid: b2669a71fc262d241ac2a54b2e16834a, type: 3}
       propertyPath: m_LocalPosition.x

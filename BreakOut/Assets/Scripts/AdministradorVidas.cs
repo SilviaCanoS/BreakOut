@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class AdministradorVidas : MonoBehaviour
 {
-    [HideInInspector] public List<GameObject> vidas; //es publica pero no se muestra en el inspector
-    public GameObject pelotaPrefab, menuGameOver;
+    //[HideInInspector]
+    public List<GameObject> vidas; //es publica pero no se muestra en el inspector
+    public GameObject pelotaPrefab, menuGameOver, vida1, vida2, vida3;
     private Pelota pelotaScript;
 
     // Start is called before the first frame update
     void Start()
     {
-        Transform[] hijos = GetComponentsInChildren<Transform>();
-        foreach (Transform t in hijos) vidas.Add(t.gameObject);
+        vidas = new List<GameObject>() { vida1, vida2, vida3 };
+        //Transform[] hijos = GetComponentsInChildren<Transform>();
+        //foreach (Transform t in hijos) vidas.Add(t.gameObject);
     }
 
     public void EliminarVida()

@@ -3835,6 +3835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPausa: {fileID: 10158744}
   pelotaPrefab: {fileID: 9164215006120764912, guid: 0989608047419bc43a8357d206e6a4fb, type: 3}
+  pelota: {fileID: 1994711649}
 --- !u!114 &963194233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7070,6 +7071,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0989608047419bc43a8357d206e6a4fb, type: 3}
+--- !u!114 &1994711649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1834984490, guid: 0989608047419bc43a8357d206e6a4fb, type: 3}
+  m_PrefabInstance: {fileID: 1994711648}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030827d7ca3eacb408742948dcba43dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1998445518
 GameObject:
   m_ObjectHideFlags: 0

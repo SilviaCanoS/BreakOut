@@ -54,7 +54,7 @@ public class Pelota : MonoBehaviour
             rigidbody.velocity = velocidadPelota * direccion;
             control.salioArriba = false;
             control.enabled = false;
-            Invoke("HabilitarControl", .1f);
+            Invoke("HabilitarControl", .05f);
         }
 
         //en caso de que la pelota se salga por el borde derecho
@@ -67,7 +67,7 @@ public class Pelota : MonoBehaviour
             rigidbody.velocity = velocidadPelota * direccion;
             control.salioDerecha = false;
             control.enabled = false;
-            Invoke("HabilitarControl", .1f);
+            Invoke("HabilitarControl", .05f);
         }
 
         //en caso de que la pelota se salga por el borde izquierdo
@@ -80,7 +80,7 @@ public class Pelota : MonoBehaviour
             rigidbody.velocity = velocidadPelota * direccion;
             control.salioIzquierda = false;
             control.enabled = false;
-            Invoke("HabilitarControl", .1f);
+            Invoke("HabilitarControl", .05f);
         }
 
         if (Input.GetKeyUp(KeyCode.Space) || Input.GetButton("Submit")) //cuando se use la tecla espacio

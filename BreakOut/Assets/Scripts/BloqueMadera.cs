@@ -11,13 +11,15 @@ public class BloqueMadera : Bloque
         resistencia = 3;
         if (opciones.nivelDificultad == Opciones.Dificultad.facil) resistencia = 1;
         else if (opciones.nivelDificultad == Opciones.Dificultad.dificil) resistencia = 6;
+        puntos = resistencia * 100;
     }
 
     private void Update()
     {
         if (resistencia <= 0)
         {
-            aumentarPuntaje.Invoke();
+            AumentarScore();
+            //aumentarPuntaje.Invoke();
             Destroy(this.gameObject);
 
         }

@@ -14,13 +14,15 @@ public class BloqueGoma : Bloque //alarga el jugador
         resistencia = 4;
         if (opciones.nivelDificultad == Opciones.Dificultad.facil) resistencia = 1;
         else if (opciones.nivelDificultad == Opciones.Dificultad.dificil) resistencia = 8;
+        puntos = resistencia * 100;
     }
 
     private void Update()
     {
         if (resistencia <= 0)
         {
-            aumentarPuntaje.Invoke();
+            AumentarScore();
+            //aumentarPuntaje.Invoke();
             Destroy(this.gameObject);
 
             jugador.GetComponent<Transform>().localScale = new Vector3(1, 8, 2);

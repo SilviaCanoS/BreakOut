@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7944217081990397223}
   - component: {fileID: 2223072144205496255}
   - component: {fileID: -3583532628808084031}
+  - component: {fileID: 3330540696439054477}
   m_Layer: 0
   m_Name: BloqueGoma
   m_TagString: Bloque
@@ -128,25 +129,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43feade1057a619429d9b929c19327ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  varScore: {fileID: 11400000, guid: dcf3c43f1e7bff34d9003c7414465909, type: 2}
   opciones: {fileID: 11400000, guid: 57bb885aa88cdf74f90097dea4080ac5, type: 2}
-  bloque: {fileID: 7070572487870475786}
   resistencia: 4
-  aumentarPuntaje:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Score, Assembly-CSharp
-        m_MethodName: AumentarScore
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 400
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  puntos: 0
   jugador: {fileID: 0}
+--- !u!114 &3330540696439054477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070572487870475786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cddd0ac1186344da704c0b0b88ff25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8560674216608654086
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +157,6 @@ GameObject:
   - component: {fileID: 370958673597949999}
   - component: {fileID: 2598272537263798607}
   - component: {fileID: 1696419366837223459}
-  - component: {fileID: 503333941071643747}
   m_Layer: 0
   m_Name: ResistenciaGoma
   m_TagString: Untagged
@@ -320,16 +318,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 2598272537263798607}
   m_maskType: 0
---- !u!114 &503333941071643747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8560674216608654086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90cddd0ac1186344da704c0b0b88ff25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bloque: {fileID: -3583532628808084031}

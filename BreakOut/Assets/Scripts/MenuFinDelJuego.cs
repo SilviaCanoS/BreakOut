@@ -7,6 +7,7 @@ public class MenuFinDelJuego : MonoBehaviour
 {
     public void SiguienteNivel()
     {
+        Time.timeScale = 1;
         var siguienteNivel = SceneManager.GetActiveScene().buildIndex + 1;
         if (SceneManager.sceneCountInBuildSettings > siguienteNivel) SceneManager.LoadScene(siguienteNivel);
         else CargarMenuPrincipal();
@@ -14,11 +15,13 @@ public class MenuFinDelJuego : MonoBehaviour
 
     public void CargarMenuPrincipal()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
     public void ReintentarNivel()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

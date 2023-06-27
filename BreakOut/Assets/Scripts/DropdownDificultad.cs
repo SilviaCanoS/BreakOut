@@ -16,7 +16,13 @@ public class DropdownDificultad : MonoBehaviour
     {
         dropdown = this.GetComponent<TMP_Dropdown>();
         dropdown.value = (int)opciones.nivelDificultad;
-        dropdown.onValueChanged.AddListener(delegate { opciones.CambiarDificultad(dropdown.value); 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); });
+        dropdown.onValueChanged.AddListener(delegate { opciones.CambiarDificultad(dropdown.value);
+            IdentficarNivel(); });
+    }
+
+    public void IdentficarNivel()
+    {
+        if(SceneManager.GetActiveScene().buildIndex != 0)
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

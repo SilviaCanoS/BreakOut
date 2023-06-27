@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Jugador : MonoBehaviour
 {
+    public Opciones opciones;
     public float timer = 0, timerEfecto = 10;
     Vector3 mousePos2D, mousePos3D; //nos da la posicion del mouse en 2D
     [SerializeField] public int limiteX = 24; //SerializeField hace que aparezca en el editor de unity
@@ -20,6 +21,8 @@ public class Jugador : MonoBehaviour
     //todas las funciones del input manager se hacen en esta funcion
     void Update()
     {
+        velocidadJugador = opciones.velocidadJugador;
+
         //mousePos2D = Input.mousePosition; //coordenadas x y y
         //mousePos2D.z = -Camera.main.transform.position.z; //coordenada z por medio de la camara
 

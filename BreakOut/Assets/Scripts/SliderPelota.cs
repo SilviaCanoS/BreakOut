@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderVelocidad : MonoBehaviour
+public class SliderPelota : MonoBehaviour
 {
     public Opciones opciones;
     Slider slider;
@@ -18,6 +18,6 @@ public class SliderVelocidad : MonoBehaviour
 
     public void ControlarCambios()
     {
-        opciones.CambiarVelocidad(slider.value);
+        opciones.CambiarVelocidadPelota(slider.value);
     }
 }

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8208174877377867807}
   - component: {fileID: 4078651385276749517}
   - component: {fileID: 9051629092426775383}
-  - component: {fileID: 7826196911749719883}
   m_Layer: 0
   m_Name: ResistenciaPiedra
   m_TagString: Untagged
@@ -173,19 +172,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 4078651385276749517}
   m_maskType: 0
---- !u!114 &7826196911749719883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2463117705343435244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90cddd0ac1186344da704c0b0b88ff25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bloque: {fileID: 4018907808379593886}
 --- !u!1 &5174808131123120711
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +186,7 @@ GameObject:
   - component: {fileID: 5472053850668947818}
   - component: {fileID: 4257824636108135410}
   - component: {fileID: 4018907808379593886}
+  - component: {fileID: 3579513709834690099}
   m_Layer: 0
   m_Name: BloquePiedra
   m_TagString: Bloque
@@ -314,21 +301,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 421530af29d1ae742b2760ccc7797824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  varScore: {fileID: 11400000, guid: dcf3c43f1e7bff34d9003c7414465909, type: 2}
   opciones: {fileID: 11400000, guid: 57bb885aa88cdf74f90097dea4080ac5, type: 2}
-  bloque: {fileID: 5174808131123120711}
   resistencia: 5
-  aumentarPuntaje:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Score, Assembly-CSharp
-        m_MethodName: AumentarScore
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 500
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  puntos: 0
+--- !u!114 &3579513709834690099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174808131123120711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90cddd0ac1186344da704c0b0b88ff25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

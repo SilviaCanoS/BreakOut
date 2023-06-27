@@ -25,6 +25,7 @@ public class AdministradorVidas : MonoBehaviour
         if(vidas.Count <= 0)
         {
             menuGameOver.SetActive(true);
+            Time.timeScale = 0;
             return;
         }
 

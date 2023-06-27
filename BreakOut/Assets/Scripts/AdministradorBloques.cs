@@ -12,6 +12,7 @@ public class AdministradorBloques : MonoBehaviour
         if (transform.childCount == 0)
         {
             menuFinNivel.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
